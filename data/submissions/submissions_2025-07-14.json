@@ -1,0 +1,128 @@
+[
+  {
+    "timestamp": "2025-07-14T00:25:16.924806",
+    "data": {
+      "age": "23",
+      "self_employed": 0,
+      "family_history": 0,
+      "work_interfere": 0.0,
+      "benefits": 1,
+      "care_options": 1,
+      "wellness_program": 1,
+      "leave": 0.0,
+      "seek_help": 1,
+      "mental_health_consequence": 0,
+      "Age": 0.06097560975609756
+    },
+    "prediction": 0,
+    "probability": 0.006255308894757214
+  },
+  {
+    "timestamp": "2025-07-14T00:25:51.108275",
+    "data": {
+      "age": "27",
+      "self_employed": 1,
+      "family_history": 1,
+      "work_interfere": 1.0,
+      "benefits": 0,
+      "care_options": 0,
+      "wellness_program": 0,
+      "leave": 0.75,
+      "seek_help": 0,
+      "mental_health_consequence": 1,
+      "Age": 0.10975609756097561
+    },
+    "prediction": 1,
+    "probability": 0.6451511168014056
+  },
+  {
+    "timestamp": "2025-07-14T00:28:06.982207",
+    "data": {
+      "age": "35",
+      "self_employed": 1,
+      "family_history": 1,
+      "work_interfere": 1.0,
+      "benefits": 0,
+      "care_options": 0,
+      "wellness_program": 0,
+      "leave": 0.75,
+      "seek_help": 0,
+      "mental_health_consequence": 1,
+      "Age": 0.2073170731707317
+    },
+    "prediction": 1,
+    "probability": 0.9987421480890314
+  },
+  {
+    "timestamp": "2025-07-14T00:30:57.148607",
+    "data": {
+      "age": "35",
+      "self_employed": 1,
+      "family_history": 1,
+      "work_interfere": 1.0,
+      "benefits": 0,
+      "care_options": 0,
+      "wellness_program": 0,
+      "leave": 0.75,
+      "seek_help": 0,
+      "mental_health_consequence": 1,
+      "Age": 0.2073170731707317
+    },
+    "prediction": 1,
+    "probability": 0.9987421480890314
+  },
+  {
+    "timestamp": "2025-07-14T00:46:24.811647",
+    "data": {
+      "age": "23",
+      "self_employed": 1,
+      "family_history": 1,
+      "work_interfere": 0.5,
+      "benefits": 0.5,
+      "care_options": 0,
+      "wellness_program": 0,
+      "leave": 0.0,
+      "seek_help": 1,
+      "mental_health_consequence": 1,
+      "Age": 0.06097560975609756
+    },
+    "prediction": 1,
+    "probability": 0.6309552855349939
+  },
+  {
+    "timestamp": "2025-07-14T10:02:10.813261",
+    "data": {
+      "age": "23",
+      "self_employed": 0,
+      "family_history": 0,
+      "work_interfere": 0.0,
+      "benefits": 1,
+      "care_options": 1,
+      "wellness_program": 1,
+      "leave": 0.0,
+      "seek_help": 1,
+      "mental_health_consequence": 0,
+      "Age": 0.06097560975609756
+    },
+    "prediction": 0,
+    "probability": 0.006255308894757214
+  },
+  {
+    "timestamp": "2025-07-14T10:02:30.696966",
+    "data": {
+      "age": "56",
+      "self_employed": 1,
+      "family_history": 1,
+      "work_interfere": 0.0,
+      "benefits": 1,
+      "care_options": 1,
+      "wellness_program": 1,
+      "leave": 0.5,
+      "seek_help": 1,
+      "mental_health_consequence": 1,
+      "Age": 0.4634146341463415
+    },
+    "prediction": 1,
+    "probability": 0.6848983536405033
+  }
+]
