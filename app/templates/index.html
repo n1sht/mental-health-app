@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Assessment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Mental Health Assessment</h1>
+            <p>A confidential tool to assess your mental well-being</p>
+        </header>
+
+        <main class="main-content">
+            <form id="assessment-form" class="assessment-form">
+                <div class="form-section">
+                    <h2>Personal Information</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="number" id="age" name="age" min="18" max="100" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="self_employed">Are you self-employed?</label>
+                            <select id="self_employed" name="self_employed" required>
+                                <option value="no">No</option>
+                                <option value="yes">Yes</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>Mental Health History</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="family_history">Family history of mental illness?</label>
+                            <select id="family_history" name="family_history" required>
+                                <option value="no">No</option>
+                                <option value="yes">Yes</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="work_interfere">Does mental health interfere with work?</label>
+                            <select id="work_interfere" name="work_interfere" required>
+                                <option value="never">Never</option>
+                                <option value="rarely">Rarely</option>
+                                <option value="sometimes">Sometimes</option>
+                                <option value="often">Often</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>Workplace Support</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="benefits">Mental health benefits provided?</label>
+                            <select id="benefits" name="benefits" required>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="don't know">Don't Know</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="care_options">Care options available?</label>
+                            <select id="care_options" name="care_options" required>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="not sure">Not Sure</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="wellness_program">Wellness program?</label>
+                            <select id="wellness_program" name="wellness_program" required>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="don't know">Don't Know</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="leave">Ease of taking leave?</label>
+                            <select id="leave" name="leave" required>
+                                <option value="very easy">Very Easy</option>
+                                <option value="somewhat easy">Somewhat Easy</option>
+                                <option value="somewhat difficult">Somewhat Difficult</option>
+                                <option value="very difficult">Very Difficult</option>
+                                <option value="don't know">Don't Know</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>Attitudes & Perceptions</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="seek_help">Would you seek help?</label>
+                            <select id="seek_help" name="seek_help" required>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="don't know">Don't Know</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mental_health_consequence">Negative consequences?</label>
+                            <select id="mental_health_consequence" name="mental_health_consequence" required>
+                                <option value="no">No</option>
+                                <option value="yes">Yes</option>
+                                <option value="maybe">Maybe</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">Get Assessment</span>
+                    <span class="btn-loader"></span>
+                </button>
+            </form>
+
+            <div id="results" class="results-container hidden">
+                <div class="results-header">
+                    <h2>Assessment Results</h2>
+                    <button class="reset-btn" onclick="resetForm()">Take Another Assessment</button>
+                </div>
+                
+                <div class="risk-indicator">
+                    <div class="risk-level" id="risk-level"></div>
+                    <div class="risk-percentage" id="risk-percentage"></div>
+                    <div class="risk-bar">
+                        <div class="risk-fill" id="risk-fill"></div>
+                    </div>
+                </div>
+
+                <div class="risk-factors" id="risk-factors"></div>
+                <div class="recommendations" id="recommendations"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
